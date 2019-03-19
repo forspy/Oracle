@@ -1,0 +1,19 @@
+解压orcle
+
+win32_11gR2_database_1of2 安装软件 同时选中2个win32_11gR2_database_1of1/2安装软件进行解压
+安装时--配置安全更新选择不接收邮件
+安装路径不要选c盘/路径名不哟啊有中文
+全局数据库名写orcl
+口令：1234
+win+r 启动数据库sqlplus / as sysdba
+
+显示当前数据库名称：show parameter db_name;
+
+安装PLSQL_Developer数据库图形化软件
+usrname：scott
+密码是：tiger
+如果锁了的话：alter user scott account unlock;
+
+不需要更新
+sys/system用户 的密码1234 （数据库安装时候的密码）
+scott用户的用户名是scott--密码tiger（图形界面的密码）
