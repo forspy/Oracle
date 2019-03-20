@@ -6,7 +6,7 @@ win32_11gR2_database_1of2 安装软件 同时选中2个win32_11gR2_database_1of1
 全局数据库名写orcl
 口令：1234
 win+r 启动数据库sqlplus / as sysdba
-
+有些没有本地和组的需要重新输入一遍用户名 system 密码：1234
 显示当前数据库名称：show parameter db_name;
 
 安装PLSQL_Developer数据库图形化软件
