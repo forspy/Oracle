@@ -16,3 +16,29 @@ b:alter user 用户名 identified by 密码
 
 显示当前登陆账户： show user;
 退出命令：exit
+
+sql（structed query language）
+其中sql又细化为以下语言
+1.ddl(data definition language) 数据定义语言 create table, update table,drop table
+2.dml(data manipulation language)数据操作语言
+3.tcl（transacation control language）事物控制语言
+4.dcl（data control language）数据控制语言
+5.dql（data query language）数据查询语言
+
+创建一个sql窗口
+![](./pic/basic1.png)
+
+命令方式创建表：
+CREATE TABLE 表名(字段1 类型(大小)，字段2类型(大小)); 
+例如：
+CREATE TABLE student(sid number(4),sname varchar2(10),sager date,ssex char(2)); 
+select * from student--用于搜索指定名字的table
+
+调整窗口
+
+![](./pic/resize_window.jpg)
+效果
+![](./pic/result1.jpg)
+字段类型
+CHAR(n) n=1 to 2000 字节 ，定长字符串，如果不指定长度，缺省为一个字节长（GBK一个汉字为2字节，UTF-8一个汉字为3个字节）
+VARCHAR2(n) n=1 to 4000 字节 可变长的字符串，具体定义时指明最大长度n，varchar可以放数字、字母以及ASCII码字符集（或EBCDIC等数据库接受的字符集标准）中的所有符号。
